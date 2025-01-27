@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>window.enableEventObserver=true</script>
+<script src="https://cdn02.jotfor.ms/static/prototype.forms.js?v=3.3.60480" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/static/jotform.forms.js?v=3.3.60480" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/2fba2b3d45d/for-widgets-server.js?v=3.3.60480" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/math-processor.js?v=3.3.60480" type="text/javascript"></script>
+<!-- <script src="https://cdn01.jotfor.ms/s/umd/2fba2b3d45d/for-form-branding-footer.js?v=3.3.60480" type="text/javascript" defer></script> -->
+<script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.60480" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.60480" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","invalidTime":"Enter a valid time","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
+	JotForm.newPaymentUI = true;
+	JotForm.originalLanguage = "en";
+	JotForm.isFormViewTrackingAllowed = true;
+	JotForm.replaceTagTest = true;
+	JotForm.uploadServerURL = "https://upload.jotform.com/upload";
+
+   JotForm.setCalculations([{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"49,45","equation":"[({49}\u002F({45}\u002F100)*({45}\u002F100))]","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1737699765750","resultField":"149","decimalPlaces":"2","isError":false,"conditionId":"1737634547883","conditionTrue":false,"baseField":"49"},{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"49,45","equation":"[({49}\u002F({45}*{45}))]","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1737699791197","resultField":"149","decimalPlaces":"2","isError":false,"conditionId":"1737634102246","conditionTrue":false,"baseField":"49"}]);
+   JotForm.setConditions([{"action":[{"id":"action_1737961301088","visibility":"Show","isError":false,"field":"174"}],"id":"1737961314166","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1737961301088","field":"173","operator":"equals","value":" General Anesthesia","isError":false}],"type":"field"},{"action":[{"id":"action_1737961224066","visibility":"Show","isError":false,"field":"176"}],"id":"1737961236159","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1737961224066","field":"174","operator":"equals","value":"■ Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737805411891","visibility":"Show","isError":false,"field":"57"}],"id":"1737805436977","index":"2","link":"Any","priority":"2","terms":[{"id":"term_1737805411891","field":"118","operator":"equals","value":"Diabetes","isError":false}],"type":"field"},{"action":[{"id":"action_1737805354178","visibility":"Show","isError":false,"field":"56"}],"id":"1737805378923","index":"3","link":"Any","priority":"3","terms":[{"id":"term_1737805354178","field":"51","operator":"equals","value":"yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737805278099","visibility":"Show","isError":false,"field":"115"}],"id":"1737805299379","index":"4","link":"Any","priority":"4","terms":[{"id":"term_1737805278099","field":"51","operator":"equals","value":"yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737804225541","visibility":"Show","isError":false,"field":"105"}],"disabled":"1","id":"1737804241739","index":"5","link":"Any","priority":"5","terms":[{"id":"term_1737804225541","field":"54","operator":"equals","value":"Former","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737805151635","visibility":"Show","isError":false,"field":"109"}],"id":"1737804188404","index":"6","link":"Any","priority":"6","terms":[{"id":"term_0_1737805151635","field":"54","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737804042758","visibility":"Show","isError":false,"field":"107"}],"id":"1737804070861","index":"7","link":"Any","priority":"7","terms":[{"id":"term_1737804042758","field":"97","operator":"equals","value":"yes","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737804694387","visibility":"Show","isError":false,"field":"112"}],"id":"1737803957830","index":"8","link":"Any","priority":"8","terms":[{"id":"term_0_1737804694387","field":"54","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737789874812","visibility":"Show","isError":false,"field":"105"}],"id":"1737789942370","index":"9","link":"Any","priority":"9","terms":[{"id":"term_1737789874812","field":"97","operator":"equals","value":"Former","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737789754117","visibility":"Show","isError":false,"field":"100"}],"id":"1737788937138","index":"10","link":"Any","priority":"10","terms":[{"id":"term_0_1737789754117","field":"97","operator":"equals","value":"yes","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737789820525","visibility":"Show","isError":false,"field":"101"}],"id":"1737788796771","index":"11","link":"Any","priority":"11","terms":[{"id":"term_0_1737789820525","field":"97","operator":"equals","value":"yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737723527851","visibility":"Hide","isError":false,"field":"96"}],"id":"1737723624714","index":"12","link":"Any","priority":"12","terms":[{"id":"term_1737723527851","field":"149","operator":"isEmpty","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_1737710385219","visibility":"HideMultiple","isError":false,"fields":["92"]}],"id":"1737710406946","index":"13","link":"Any","priority":"13","terms":[{"id":"term_1737710385219","field":"44","operator":"isEmpty","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737709778920","visibility":"ShowMultiple","isError":false,"fields":["156","157","158","159","160","161","162"]}],"id":"1737707104896","index":"14","link":"Any","priority":"14","terms":[{"id":"term_0_1737709778920","field":"44","operator":"greaterThan","value":"65","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737706926300","visibility":"ShowMultiple","isError":false,"fields":["153","155"]}],"id":"1737706725786","index":"15","link":"Any","priority":"15","terms":[{"id":"term_0_1737706926300","field":"44","operator":"greaterThan","value":"65","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737706761484","visibility":"ShowMultiple","isError":false,"fields":["96"]}],"id":"1737706647716","index":"16","link":"Any","priority":"16","terms":[{"id":"term_0_1737706761484","field":"44","operator":"greaterThan","value":"65","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737706784574","visibility":"ShowMultiple","isError":false,"fields":["152"]}],"id":"1737706516643","index":"17","link":"Any","priority":"17","terms":[{"id":"term_0_1737706784574","field":"44","operator":"greaterThan","value":"65","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737710288726","visibility":"HideMultiple","isError":false,"fields":["152","155","156","157","158","159","160","161","162","92"]}],"id":"1737706490474","index":"18","link":"Any","priority":"18","terms":[{"id":"term_0_1737710288726","field":"44","operator":"lessThan","value":"65","isError":false}],"type":"field"},{"action":[{"id":"action_1737705283557","visibility":"HideMultiple","isError":false,"fields":["149"]}],"id":"1737705379980","index":"19","link":"Any","priority":"19","terms":[{"id":"term_1737705343787","field":"49","operator":"isEmpty","value":"","isError":false},{"id":"term_1737705331339","field":"45","operator":"isEmpty","value":"","isError":false},{"id":"term_1737705317404","field":"45","operator":"isFilled","value":"","isError":false},{"id":"term_1737705283557","field":"49","operator":"isFilled","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_1737703847890","visibility":"HideMultiple","isError":false,"fields":["128"]}],"id":"1737703873263","index":"20","link":"Any","priority":"20","terms":[{"id":"term_1737703847890","field":"127","operator":"notEquals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737703715913","visibility":"HideMultiple","isError":false,"fields":["130"]}],"id":"1737703799984","index":"21","link":"Any","priority":"21","terms":[{"id":"term_1737703715913","field":"129","operator":"notEquals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737703061423","visibility":"Show","isError":false,"field":"125"}],"id":"1737703217245","index":"22","link":"All","priority":"22","terms":[{"id":"term_1737703155078","field":"142","operator":"isFilled","value":"","isError":false}],"type":"field"},{"action":[{"id":"action_1737642764864","visibility":"HideMultiple","isError":false,"fields":["151"]}],"id":"1737642792120","index":"23","link":"Any","priority":"23","terms":[{"id":"term_1737642764864","field":"150","operator":"notEquals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737642658929","visibility":"Show","isError":false,"field":"151"}],"id":"1737642724210","index":"24","link":"Any","priority":"24","terms":[{"id":"term_1737642658929","field":"150","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737640692290","visibility":"Show","isError":false,"field":"65"}],"id":"1737641117080","index":"25","link":"Any","priority":"25","terms":[{"id":"term_1737640692290","field":"133","operator":"equals","value":"Light (e.g., walking on level ground)","isError":false}],"type":"field"},{"action":[{"id":"action_1737640614763","visibility":"HideMultiple","isError":false,"fields":["132"]}],"id":"1737640637121","index":"26","link":"Any","priority":"26","terms":[{"id":"term_1737640614763","field":"63","operator":"equals","value":"No","isError":false}],"type":"field"},{"action":[{"id":"action_1737640464747","visibility":"Show","isError":false,"field":"132"}],"id":"1737640494067","index":"27","link":"Any","priority":"27","terms":[{"id":"term_1737640464747","field":"63","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737639835679","visibility":"ShowMultiple","isError":false,"fields":["131"]}],"id":"1737639880456","index":"28","link":"Any","priority":"28","terms":[{"id":"term_1737639835679","field":"62","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737639737370","visibility":"ShowMultiple","isError":false,"fields":["130"]}],"id":"1737639792618","index":"29","link":"Any","priority":"29","terms":[{"id":"term_1737639737370","field":"129","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_1737639674217","visibility":"ShowMultiple","isError":false,"fields":["128"]}],"id":"1737639721898","index":"30","link":"Any","priority":"30","terms":[{"id":"term_1737639674217","field":"127","operator":"equals","value":"Yes","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737642164206","visibility":"HideMultiple","isError":false,"fields":["96"]},{"id":"action_1_1737642164206","visibility":"ShowMultiple","isError":false,"fields":["95"]}],"id":"1737634723521","index":"31","link":"Any","priority":"31","terms":[{"id":"term_0_1737642164206","field":"149","operator":"greaterThan","value":"30","isError":false}],"type":"field"},{"action":[{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"49,45","equation":"[({49}\u002F({45}\u002F100)*({45}\u002F100))]","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1737699765750","resultField":"149","decimalPlaces":"2","isError":false,"conditionId":"1737634547883","conditionTrue":false,"baseField":"49"}],"id":"1737634547883","index":"32","link":"All","priority":"32","terms":[{"id":"term_0_1737699765750","field":"49","operator":"isFilled","value":"","isError":false},{"id":"term_1_1737699765750","field":"45","operator":"isFilled","value":"","isError":false}],"type":"calculation"},{"action":[{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"49,45","equation":"[({49}\u002F({45}*{45}))]","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1737699791197","resultField":"149","decimalPlaces":"2","isError":false,"conditionId":"1737634102246","conditionTrue":false,"baseField":"49"}],"id":"1737634102246","index":"33","link":"All","priority":"33","terms":[{"id":"term_0_1737699791197","field":"49","operator":"isFilled","value":"","isError":false},{"id":"term_1_1737699791197","field":"45","operator":"isFilled","value":"","isError":false}],"type":"calculation"},{"action":[{"id":"action_0_1737710242213","visibility":"Hide","isError":false,"field":"92"}],"id":"1737631124860","index":"34","link":"Any","priority":"34","terms":[{"id":"term_0_1737710242213","field":"44","operator":"lessThan","value":"66","isError":false}],"type":"field"},{"action":[{"id":"action_0_1737702854860","visibility":"ShowMultiple","isError":false,"fields":["92"]}],"id":"1737629880140","index":"35","link":"Any","priority":"35","terms":[{"id":"term_0_1737702854860","field":"44","operator":"greaterThan","value":"65","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":250221251539044,"campaign":"powered_by_jotform_le","isCardForm":false,"isLegacyForm":true,"formLanguage":"en"})});	JotForm.isFullSource = true;
+
+      try{
+        function isTrackingProhibited() {
+      try {
+        var isEUDomain = /(?:eu.jotform)|(?:jotformeu.com)/.test(window.location.host);
+        var isHipaaDomain = /(?:hipaa.jotform)/.test(window.location.host);
+        var isProhibitedParameterExists = /(?:wfTaskID|PCI_preSubmitRequest|wfTaskType)/.test(window.location.search);
+        var isEditMode = JotForm.isEditMode();
+        var isTrackingProhibited = isEUDomain || isHipaaDomain || isProhibitedParameterExists || isEditMode;
+        return isTrackingProhibited;
+      } catch (e) {
+        console.log(e);
+        return true;
+      }
+    }
+        if (!isTrackingProhibited()) {
+          var sesApiUrl = /jotform.pro/.test(window.location.host) ? '/API' : 'https://api.jotform.com';
+          function sendOpenId(uuid, eventType) {
+            navigator.sendBeacon(sesApiUrl + '/form/' + 250221251539044 + '/event/' + uuid + '/' + eventType, {});
+          }
+          var formOpenId = '';
+          if (window.crypto) {
+            formOpenId = window.crypto.getRandomValues(new BigUint64Array(1)).toString();
+          } else {
+            formOpenId = (Math.random() * 16).toString(16).slice(2);
+          }
+          sendOpenId = sendOpenId.bind(this, formOpenId);
+          function sendOpenIdOnSubmit() {
+            var currentForm = $('250221251539044');
+            currentForm.addEventListener('submit', function() { sendOpenId('clientSubmitClick_V5'); });
+            var openIdInput = currentForm.querySelector('[name="formOpenId_V5"]');
+            if (!openIdInput) {
+              openIdInput = document.createElement('input');
+              openIdInput.setAttribute('type', 'hidden');
+              openIdInput.setAttribute('name', 'formOpenId_V5');
+              currentForm.appendChild(openIdInput);
+            }
+            openIdInput.value = formOpenId;
+          }
+          sendOpenId('clientFormView_V5');
+          if (document.readyState == 'complete' || (this.jsForm && (document.readyState === undefined || document.readyState === 'interactive'))) {
+              sendOpenIdOnSubmit();
+          } else {
+              document.ready(sendOpenIdOnSubmit);
+          }
+        }
+      } catch(openIdBlockError) {
+        console.log(openIdBlockError);
+      }
+    
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_176').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_109').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_178').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_142').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_128').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_130').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_131').setAttribute('tabindex',0);
+      JotForm.shuffleOptions("63");
+      JotForm.shuffleOptions("65");
+      JotForm.shuffleOptions("73");
+      JotForm.alterTexts(undefined);
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"patientIntake","qid":"1","text":"Patient Intake Form","type":"control_head"},null,{"description":"","name":"name","qid":"3","text":"Name","type":"control_fullname"},null,null,null,null,null,null,null,{"name":"divider","qid":"11","type":"control_divider"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"typeA","qid":"33","text":"Terms and Conditions","type":"control_widget"},null,null,null,null,null,null,{"name":"divider40","qid":"40","type":"control_divider"},null,null,null,{"description":"","name":"whatIs44","qid":"44","subLabel":"What is your age","text":"What is your age","type":"control_number"},{"description":"","name":"whatIs45","qid":"45","subLabel":"What is your age","text":"What is your height ?(cm)","type":"control_number"},null,null,null,{"description":"","name":"whatIs49","qid":"49","subLabel":"","text":"What is your weight?","type":"control_number"},null,{"description":"","name":"whatIs51","qid":"51","subLabel":"","text":"Do you use any recreational substances?","type":"control_dropdown"},null,null,{"description":"","name":"doYou54","qid":"54","subLabel":"","text":"Do you drink alcohol? ","type":"control_dropdown"},null,{"description":"","name":"howOften56","qid":"56","subLabel":"","text":"How often?","type":"control_dropdown"},{"description":"","name":"howDo","qid":"57","subLabel":"","text":"How do you manage your diabetes?","type":"control_dropdown"},null,{"description":"","name":"howOften59","qid":"59","subLabel":"","text":"How often do you use your rescue inhaler?","type":"control_dropdown"},{"description":"","name":"areYou60","qid":"60","subLabel":"","text":"Have you been admitted for COPD or asthma in the last year?","type":"control_dropdown"},{"name":"medications","qid":"61","text":"Medications","type":"control_head"},{"description":"","name":"areYou62","qid":"62","subLabel":"","text":"Are you currently taking any medications?","type":"control_dropdown"},{"description":"","name":"areYou63","qid":"63","subLabel":"","text":"Are you taking blood thinners such as Warfarin, Aspirin, or newer medications like Eliquis,Xarelto, or Pradaxa? ","type":"control_dropdown"},{"name":"functionalStatus","qid":"64","text":"Functional Status","type":"control_head"},{"description":"","name":"doYou65","qid":"65","subLabel":"","text":"Do you use mobility aids","type":"control_dropdown"},{"description":"","name":"doYou66","qid":"66","subLabel":"","text":"Do you require assistance with daily activities like bathing, dressing, or cooking? ","type":"control_dropdown"},{"name":"surgicalAnd","qid":"67","text":"Surgical and Anesthesia Consideration","type":"control_head"},{"description":"","name":"doYou68","qid":"68","subLabel":"","text":"Do you understand the details of your upcoming surgery?","type":"control_dropdown"},null,{"description":"","name":"doYou70","qid":"70","subLabel":"","text":"Do you have any hardware in your back (e.g., rods, screws) or a history of infections near the surgical site? ","type":"control_dropdown"},{"name":"socialAnd","qid":"71","text":"Social and Psychological Factors","type":"control_head"},{"description":"","name":"doYou72","qid":"72","subLabel":"","text":"Do you have someone to help you at home after surgery? ","type":"control_dropdown"},{"description":"","name":"doYou73","qid":"73","subLabel":"","text":"Do you feel stressed or anxious about your surgery?","type":"control_dropdown"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"doYou92","qid":"92","subLabel":"","text":"Do you have difficulty walking or managing daily activities","type":"control_dropdown"},null,null,{"description":"","name":"haveYou95","qid":"95","subLabel":"","text":"Have you experienced difficulty with physical activity or breathing due to your weight?","type":"control_dropdown"},{"description":"","name":"haveYou96","qid":"96","subLabel":"","text":"Have you recently lost a significant amount of weight unintentionally?","type":"control_dropdown"},{"description":"","name":"doYou97","qid":"97","subLabel":"","text":"Do you smoke or use tobacco products?","type":"control_dropdown"},null,null,{"name":"typeA100","qid":"100","text":"How many packs per day?","type":"control_widget"},{"description":"","name":"forHow","qid":"101","subLabel":"","text":"For how many years?","type":"control_number"},null,null,null,{"description":"","name":"whenDid","qid":"105","subLabel":"","text":"When did you quit?","type":"control_number"},null,{"description":"","name":"haveYou107","qid":"107","subLabel":"","text":"Have you tried to quit smoking recently?","type":"control_dropdown"},null,{"description":"","name":"howMuch109","qid":"109","subLabel":"Text Field","text":"How much do you drink?","type":"control_textbox"},null,null,{"description":"","name":"howOften112","qid":"112","text":"How often do you drink alcohol?","type":"control_radio"},null,null,{"description":"","name":"whichSubstances","qid":"115","text":"Which substance(s)?","type":"control_checkbox"},null,null,{"description":"","name":"doYou","qid":"118","text":"Do you have any of the following conditions?","type":"control_checkbox"},null,null,null,{"name":"typeA122","qid":"122","text":"What was your last a1c?","type":"control_widget"},null,null,{"description":"","name":"howWas","qid":"125","text":"How was it treated?","type":"control_radio"},{"description":"","name":"doYou126","qid":"126","subLabel":"","text":"Do you use a CPAP machine?","type":"control_dropdown"},{"description":"","name":"areYou","qid":"127","subLabel":"","text":"Are you allergic to any medications or substances?","type":"control_dropdown"},{"description":"","name":"pleaseList","qid":"128","subLabel":"","text":"Please list your allergies.","type":"control_textbox"},{"description":"","name":"haveYou129","qid":"129","subLabel":"","text":"Have you had surgery before? ","type":"control_dropdown"},{"description":"","name":"didYou","qid":"130","subLabel":"","text":"Did you experience any complications during or after surgery?","type":"control_textbox"},{"description":"","name":"pleaseList131","qid":"131","subLabel":"Text Field","text":"Please list your medications, including over-the-counter drugs and supplements.","type":"control_textbox"},{"description":"","name":"whichOnes","qid":"132","text":"Which ones?","type":"control_checkbox"},{"description":"","name":"howMuch133","qid":"133","text":"How much physical activity can you comfortably perform?","type":"control_radio"},null,null,null,null,null,null,null,null,{"description":"","name":"haveYou142","qid":"142","subLabel":"eg . 1 weeks, 1 year,","text":"Have you ever had a heart attack?","type":"control_textbox"},null,{"name":"reviewYour144","qid":"144","text":"Submit","type":"control_button"},null,null,null,null,{"description":"","name":"bmi","qid":"149","subLabel":"","text":"BMI","type":"control_number"},{"description":"","name":"haveYou","qid":"150","subLabel":"","text":"Have you ever had complications with anesthesia?","type":"control_dropdown"},{"description":"","name":"choices","qid":"151","text":"Choices","type":"control_checkbox"},null,{"description":"","name":"haveYou153","qid":"153","subLabel":"","text":"Have you experienced any changes in your appetite or weight recently?","type":"control_dropdown"},null,{"description":"","name":"haveYou155","qid":"155","subLabel":"","text":"Have you noticed any memory problems, confusion, or difficulty concentrating?","type":"control_dropdown"},{"description":"","name":"doYou156","qid":"156","subLabel":"","text":"Do you ever feel disoriented or lost, even in familiar places?","type":"control_dropdown"},{"description":"","name":"doYou157","qid":"157","subLabel":"","text":"Do you often feel sad, anxious, or depressed?","type":"control_dropdown"},{"description":"","name":"areYou158","qid":"158","subLabel":"","text":"Are you experiencing any feelings of loneliness or social isolation?","type":"control_dropdown"},{"description":"","name":"doYou159","qid":"159","subLabel":"","text":"Do you have trouble seeing or hearing, even with your glasses or hearing aid?","type":"control_dropdown"},{"description":"","name":"doYou160","qid":"160","subLabel":"","text":"Do you have trouble falling asleep or staying asleep at night?","type":"control_dropdown"},{"description":"","name":"doYou161","qid":"161","subLabel":"","text":"Do you often feel tired or lack energy during the day?","type":"control_dropdown"},{"description":"","name":"haveYou162","qid":"162","subLabel":"","text":"Have you had any recent changes in your vision or hearing?","type":"control_dropdown"},null,null,null,null,null,null,{"description":"","name":"doYou170","qid":"169","subLabel":"","text":"Do you have difficulty walking or managing daily activities","type":"control_dropdown"},{"description":"","name":"haveYou168","qid":"170","subLabel":"","text":"Have you noticed any memory problems, confusion, or difficulty concentrating?","type":"control_dropdown"},null,{"description":"","name":"surgeryType","qid":"172","subLabel":"","text":"Surgery Type","type":"control_dropdown"},{"description":"","name":"anesthesiaType","qid":"173","subLabel":"","text":"Anesthesia Type Preference","type":"control_dropdown"},{"description":"","name":"haveYou174","qid":"174","subLabel":"","text":"Have you had complications with general anesthesia before?","type":"control_dropdown"},null,{"description":"","name":"describeThe176","qid":"176","subLabel":"","text":"Describe the complications","type":"control_textbox"},{"description":"","name":"isThis177","qid":"177","subLabel":"","text":"Is this surgery for an infected joint?","type":"control_dropdown"},{"description":"","name":"whenDid178","qid":"178","subLabel":"","text":"When did you quit?(drink)","type":"control_textbox"}]);}, 20); 
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/static/form-common.css?v=7a6d59e
+"/>
+<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.60480&themeRevisionID=65660e4b326633110492e01a"/>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.60480" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.60480" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: left;
+      
+      }
+
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/250221251539044" method="post" name="form_250221251539044" id="250221251539044" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="250221251539044" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1737978166789" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1737978166789" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section" role="presentation">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">Patient Intake Form</h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_3"><label class="form-label form-label-top" id="label_3" for="first_3" aria-hidden="false"> Name </label>
+        <div id="cid_3" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_3" name="q3_name[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" data-component="first" aria-labelledby="label_3 sublabel_3_first" value="" /><label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px">First Name</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_3" name="q3_name[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_3 family-name" size="15" data-component="last" aria-labelledby="label_3 sublabel_3_last" value="" /><label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px">Last Name</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_dropdown" id="id_172"><label class="form-label form-label-top" id="label_172" for="input_172" aria-hidden="false"> Surgery Type<span class="form-required">*</span> </label>
+        <div id="cid_172" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_172" name="q172_surgeryType" style="width:310px" data-component="dropdown" required="" aria-label="Surgery Type">
+            <option value="">Please Select</option>
+            <option value="Rhinoplasty (Nose Reshaping)">Rhinoplasty (Nose Reshaping)</option>
+            <option value="Breast Augmentation (Augmentation Mammoplasty)">Breast Augmentation (Augmentation Mammoplasty)</option>
+            <option value="Breast Lift (Mastopexy)">Breast Lift (Mastopexy)</option>
+            <option value="Breast Reduction">Breast Reduction</option>
+            <option value="Liposuction">Liposuction</option>
+            <option value="Abdominoplasty (Tummy Tuck)">Abdominoplasty (Tummy Tuck)</option>
+            <option value="Facelift (Rhytidectomy)">Facelift (Rhytidectomy)</option>
+            <option value="Neck Lift">Neck Lift</option>
+            <option value="Eyelid Surgery (Blepharoplasty)">Eyelid Surgery (Blepharoplasty)</option>
+            <option value="Brow Lift">Brow Lift</option>
+            <option value="Buttock Augmentation (Brazilian Butt Lift)">Buttock Augmentation (Brazilian Butt Lift)</option>
+            <option value="Chin Augmentation (Genioplasty)">Chin Augmentation (Genioplasty)</option>
+            <option value="Cheek Implants">Cheek Implants</option>
+            <option value="Fat Grafting or Fat Transfer">Fat Grafting or Fat Transfer</option>
+            <option value="Lip Augmentation">Lip Augmentation</option>
+            <option value="Breast Reconstruction (Post-Mastectomy)">Breast Reconstruction (Post-Mastectomy)</option>
+            <option value="Hand Surgery (e.g., Carpal Tunnel Release, Tendon Repair)">Hand Surgery (e.g., Carpal Tunnel Release, Tendon Repair)</option>
+            <option value="Cleft Lip and Palate Repair">Cleft Lip and Palate Repair</option>
+            <option value="Scar Revision Surgery">Scar Revision Surgery</option>
+            <option value="Skin Cancer Removal and Reconstruction">Skin Cancer Removal and Reconstruction</option>
+            <option value="Microsurgery (e.g., Free Tissue Transfer)">Microsurgery (e.g., Free Tissue Transfer)</option>
+            <option value="Burn Reconstruction Surgery">Burn Reconstruction Surgery</option>
+            <option value="Tissue Expansion">Tissue Expansion</option>
+            <option value="Botox Injections">Botox Injections</option>
+            <option value="Dermal Fillers (e.g., Juvederm, Restylane)">Dermal Fillers (e.g., Juvederm, Restylane)</option>
+            <option value="Laser Skin Resurfacing">Laser Skin Resurfacing</option>
+            <option value="Chemical Peels">Chemical Peels</option>
+            <option value="Microdermabrasion">Microdermabrasion</option>
+            <option value="Facial Feminization Surgery">Facial Feminization Surgery</option>
+            <option value="Top Surgery (Chest Masculinization or Feminization)">Top Surgery (Chest Masculinization or Feminization)</option>
+            <option value="Bottom Surgery (Phalloplasty, Vaginoplasty)">Bottom Surgery (Phalloplasty, Vaginoplasty)</option>
+            <option value="Otoplasty (Ear Reshaping)">Otoplasty (Ear Reshaping)</option>
+            <option value="Ear Reconstruction (e.g., Post-Trauma)">Ear Reconstruction (e.g., Post-Trauma)</option>
+            <option value="Revision Rhinoplasty (Corrective Nose Surgery)">Revision Rhinoplasty (Corrective Nose Surgery)</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_dropdown" id="id_173"><label class="form-label form-label-top" id="label_173" for="input_173" aria-hidden="false"> Anesthesia Type Preference<span class="form-required">*</span> </label>
+        <div id="cid_173" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_173" name="q173_anesthesiaType" style="width:310px" data-component="dropdown" required="" aria-label="Anesthesia Type Preference">
+            <option value="">Please Select</option>
+            <option value="General Anesthesia">General Anesthesia</option>
+            <option value="Regional Anesthesia (Spinal, Epidural,">Regional Anesthesia (Spinal, Epidural,</option>
+            <option value="Peripheral Nerve Block)">Peripheral Nerve Block)</option>
+            <option value="Local Anesthesia">Local Anesthesia</option>
+            <option value="No Preference">No Preference</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_174"><label class="form-label form-label-top" id="label_174" for="input_174" aria-hidden="false"> Have you had complications with general anesthesia before? </label>
+        <div id="cid_174" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_174" name="q174_haveYou174" style="width:310px" data-component="dropdown" aria-label="Have you had complications with general anesthesia before?">
+            <option value="">Please Select</option>
+            <option value="■ Yes">■ Yes</option>
+            <option value="■ No">■ No</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_176"><label class="form-label form-label-top" id="label_176" for="input_176" aria-hidden="false"> Describe the complications </label>
+        <div id="cid_176" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_176" name="q176_describeThe176" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_176" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-5 jf-required" data-type="control_dropdown" id="id_177"><label class="form-label form-label-top" id="label_177" for="input_177" aria-hidden="false"> Is this surgery for an infected joint?<span class="form-required">*</span> </label>
+        <div id="cid_177" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_177" name="q177_isThis177" style="width:310px" data-component="dropdown" required="" aria-label="Is this surgery for an infected joint?">
+            <option value="">Please Select</option>
+            <option value="■ Yes">■ Yes</option>
+            <option value="■ No">■ No</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-6 jf-required" data-type="control_number" id="id_44"><label class="form-label form-label-top" id="label_44" for="input_44" aria-hidden="false"> What is your age<span class="form-required">*</span> </label>
+        <div id="cid_44" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="number" id="input_44" name="q44_whatIs44" data-type="input-number" class=" form-number-input form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" placeholder="e.g., 23" data-component="number" aria-labelledby="label_44 sublabel_input_44" required="" step="any" value="" /><label class="form-sub-label" for="input_44" id="sublabel_input_44" style="min-height:13px">What is your age</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-7 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_92"><label class="form-label form-label-top" id="label_92" for="input_92" aria-hidden="false"> Do you have difficulty walking or managing daily activities </label>
+        <div id="cid_92" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_92" name="q92_doYou92" style="width:310px" data-component="dropdown" aria-label="Do you have difficulty walking or managing daily activities">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-8 always-hidden" data-type="control_dropdown" id="id_169"><label class="form-label form-label-top" id="label_169" for="input_169" aria-hidden="false"> Do you have difficulty walking or managing daily activities </label>
+        <div id="cid_169" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_169" name="q169_doYou170" style="width:310px" data-component="dropdown" aria-label="Do you have difficulty walking or managing daily activities">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden" data-type="control_dropdown" id="id_170"><label class="form-label form-label-top form-label-auto" id="label_170" for="input_170" aria-hidden="false"> Have you noticed any memory problems, confusion, or difficulty concentrating? </label>
+        <div id="cid_170" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_170" name="q170_haveYou168" style="width:310px" data-component="dropdown" aria-label="Have you noticed any memory problems, confusion, or difficulty concentrating?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_153"><label class="form-label form-label-top form-label-auto" id="label_153" for="input_153" aria-hidden="false"> Have you experienced any changes in your appetite or weight recently? </label>
+        <div id="cid_153" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_153" name="q153_haveYou153" style="width:310px" data-component="dropdown" aria-label="Have you experienced any changes in your appetite or weight recently?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_155"><label class="form-label form-label-top form-label-auto" id="label_155" for="input_155" aria-hidden="false"> Have you noticed any memory problems, confusion, or difficulty concentrating? </label>
+        <div id="cid_155" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_155" name="q155_haveYou155" style="width:310px" data-component="dropdown" aria-label="Have you noticed any memory problems, confusion, or difficulty concentrating?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_156"><label class="form-label form-label-top form-label-auto" id="label_156" for="input_156" aria-hidden="false"> Do you ever feel disoriented or lost, even in familiar places? </label>
+        <div id="cid_156" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_156" name="q156_doYou156" style="width:310px" data-component="dropdown" aria-label="Do you ever feel disoriented or lost, even in familiar places?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_157"><label class="form-label form-label-top form-label-auto" id="label_157" for="input_157" aria-hidden="false"> Do you often feel sad, anxious, or depressed? </label>
+        <div id="cid_157" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_157" name="q157_doYou157" style="width:310px" data-component="dropdown" aria-label="Do you often feel sad, anxious, or depressed?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_158"><label class="form-label form-label-top form-label-auto" id="label_158" for="input_158" aria-hidden="false"> Are you experiencing any feelings of loneliness or social isolation? </label>
+        <div id="cid_158" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_158" name="q158_areYou158" style="width:310px" data-component="dropdown" aria-label="Are you experiencing any feelings of loneliness or social isolation?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_159"><label class="form-label form-label-top form-label-auto" id="label_159" for="input_159" aria-hidden="false"> Do you have trouble seeing or hearing, even with your glasses or hearing aid? </label>
+        <div id="cid_159" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_159" name="q159_doYou159" style="width:310px" data-component="dropdown" aria-label="Do you have trouble seeing or hearing, even with your glasses or hearing aid?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_160"><label class="form-label form-label-top form-label-auto" id="label_160" for="input_160" aria-hidden="false"> Do you have trouble falling asleep or staying asleep at night? </label>
+        <div id="cid_160" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_160" name="q160_doYou160" style="width:310px" data-component="dropdown" aria-label="Do you have trouble falling asleep or staying asleep at night?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_161"><label class="form-label form-label-top form-label-auto" id="label_161" for="input_161" aria-hidden="false"> Do you often feel tired or lack energy during the day? </label>
+        <div id="cid_161" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_161" name="q161_doYou161" style="width:310px" data-component="dropdown" aria-label="Do you often feel tired or lack energy during the day?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_162"><label class="form-label form-label-top form-label-auto" id="label_162" for="input_162" aria-hidden="false"> Have you had any recent changes in your vision or hearing? </label>
+        <div id="cid_162" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_162" name="q162_haveYou162" style="width:310px" data-component="dropdown" aria-label="Have you had any recent changes in your vision or hearing?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_number" id="id_45"><label class="form-label form-label-top" id="label_45" for="input_45" aria-hidden="false"> What is your height ?(cm)<span class="form-required">*</span> </label>
+        <div id="cid_45" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="number" id="input_45" name="q45_whatIs45" data-type="input-number" class=" form-number-input form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" placeholder="e.g., 23" data-component="number" aria-labelledby="label_45 sublabel_input_45" required="" step="any" value="" /><label class="form-sub-label" for="input_45" id="sublabel_input_45" style="min-height:13px">What is your age</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_number" id="id_49"><label class="form-label form-label-top" id="label_49" for="input_49" aria-hidden="false"> What is your weight?<span class="form-required">*</span> </label>
+        <div id="cid_49" class="form-input-wide jf-required" data-layout="half"> <input type="number" id="input_49" name="q49_whatIs49" data-type="input-number" class=" form-number-input form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" placeholder="e.g., 23" data-component="number" aria-labelledby="label_49" required="" step="any" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_96"><label class="form-label form-label-top" id="label_96" for="input_96" aria-hidden="false"> Have you recently lost a significant amount of weight unintentionally? </label>
+        <div id="cid_96" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_96" name="q96_haveYou96" style="width:310px" data-component="dropdown" aria-label="Have you recently lost a significant amount of weight unintentionally?">
+            <option value="">Please Select</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_95"><label class="form-label form-label-top" id="label_95" for="input_95" aria-hidden="false"> Have you experienced difficulty with physical activity or breathing due to your weight? </label>
+        <div id="cid_95" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_95" name="q95_haveYou95" style="width:310px" data-component="dropdown" aria-label="Have you experienced difficulty with physical activity or breathing due to your weight?">
+            <option value="">Please Select</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-5 jf-required" data-type="control_dropdown" id="id_97"><label class="form-label form-label-top" id="label_97" for="input_97" aria-hidden="false"> Do you smoke or use tobacco products?<span class="form-required">*</span> </label>
+        <div id="cid_97" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_97" name="q97_doYou97" style="width:310px" data-component="dropdown" required="" aria-label="Do you smoke or use tobacco products?">
+            <option value="">Please Select</option>
+            <option value="yes">yes</option>
+            <option value="No">No</option>
+            <option value="Former">Former</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-6 always-hidden form-field-hidden" style="display:none;" data-type="control_widget" id="id_100"><label class="form-label form-label-top" id="label_100" for="input_100" aria-hidden="false"> How many packs per day? </label>
+        <div id="cid_100" class="form-input-wide always-hidden" data-layout="full">
+          <div data-widget-name="Numeric Slider" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="52934d8f3be147110a00002a" title="Numeric Slider" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_100" src="" style="max-width:500px;border:none;width:100%;height:70px" data-width="500" data-height="70"></iframe>
+            <div class="widget-inputs-wrapper"><input id="input_100" class="form-hidden form-widget  " type="hidden" name="q100_typeA100" value="" /><input id="widget_settings_100" class="form-hidden form-widget-settings" type="hidden" data-version="2" value="%5B%7B%22name%22%3A%22minvalue%22%2C%22value%22%3A%220%22%7D%2C%7B%22name%22%3A%22maxvalue%22%2C%22value%22%3A%22100%22%7D%2C%7B%22name%22%3A%22theme%22%2C%22value%22%3A%22Legacy%22%7D%5D" /></div>
+            <script type="text/javascript">
+              setTimeout(function()
+              {
+                function renderWidget()
+                {
+                  var _cFieldFrame = document.getElementById("customFieldFrame_100");
+                  if (_cFieldFrame)
+                  {
+                    _cFieldFrame.onload = function()
+                    {
+                      if (typeof widgetFrameLoaded !== 'undefined')
+                      {
+                        widgetFrameLoaded(100,
+                        {
+                          "formID": 250221251539044
+                        }, undefined)
+                      }
+                    };
+                    _cFieldFrame.src = "//widgets.jotform.io/pickers/slider.html?qid=100&isOpenedInPortal=undefined&isOpenedInAgent=undefined&align=Left&ref=" +
+                      encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                      '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                  }
+                }
+                if (false)
+                {
+                  var _interval = setInterval(function()
+                  {
+                    var dataMode = document.querySelector('html').getAttribute('data-mode');
+                    if (dataMode === 'fillMode')
+                    {
+                      renderWidget()
+                      clearInterval(_interval);
+                    }
+                  }, 1000);
+                }
+                else
+                {
+                  renderWidget();
+                }
+              }, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-7 always-hidden form-field-hidden" style="display:none;" data-type="control_number" id="id_101"><label class="form-label form-label-top" id="label_101" for="input_101" aria-hidden="false"> For how many years? </label>
+        <div id="cid_101" class="form-input-wide always-hidden" data-layout="half"> <input type="number" id="input_101" name="q101_forHow" data-type="input-number" class=" form-number-input form-textbox" data-defaultvalue="" data-component="number" aria-labelledby="label_101" step="any" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-8 always-hidden form-field-hidden" style="display:none;" data-type="control_number" id="id_105"><label class="form-label form-label-top" id="label_105" for="input_105" aria-hidden="false"> When did you quit? </label>
+        <div id="cid_105" class="form-input-wide always-hidden" data-layout="half"> <input type="number" id="input_105" name="q105_whenDid" data-type="input-number" class=" form-number-input form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="number" aria-labelledby="label_105" step="any" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-9 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_107"><label class="form-label form-label-top" id="label_107" for="input_107" aria-hidden="false"> Have you tried to quit smoking recently? </label>
+        <div id="cid_107" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_107" name="q107_haveYou107" style="width:310px" data-component="dropdown" aria-label="Have you tried to quit smoking recently?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-10 jf-required" data-type="control_dropdown" id="id_54"><label class="form-label form-label-top" id="label_54" for="input_54" aria-hidden="false"> Do you drink alcohol? <span class="form-required">*</span> </label>
+        <div id="cid_54" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_54" name="q54_doYou54" style="width:500px" data-component="dropdown" required="" aria-label="Do you drink alcohol? ">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Former">Former</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-11 always-hidden form-field-hidden" style="display:none;" data-type="control_radio" id="id_112"><label class="form-label form-label-top" id="label_112" aria-hidden="false"> How often do you drink alcohol? </label>
+        <div id="cid_112" class="form-input-wide always-hidden" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_112" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_112" type="radio" class="form-radio" id="input_112_0" name="q112_howOften112" value="Occasionally" /><label id="label_input_112_0" for="input_112_0">Occasionally</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_112" type="radio" class="form-radio" id="input_112_1" name="q112_howOften112" value="Weekly" /><label id="label_input_112_1" for="input_112_1">Weekly</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_112" type="radio" class="form-radio" id="input_112_2" name="q112_howOften112" value="Daily" /><label id="label_input_112_2" for="input_112_2">Daily</label></span></div>
+        </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-12 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_109"><label class="form-label form-label-top" id="label_109" for="input_109" aria-hidden="false"> How much do you drink? </label>
+        <div id="cid_109" class="form-input-wide always-hidden" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_109" name="q109_howMuch109" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:500px" size="500" data-component="textbox" aria-labelledby="label_109 sublabel_input_109" value="" /><label class="form-sub-label" for="input_109" id="sublabel_input_109" style="min-height:13px">Text Field</label></span> </div>
+      </li>
+      <li class="form-line always-hidden" data-type="control_textbox" id="id_178"><label class="form-label form-label-top form-label-auto" id="label_178" for="input_178" aria-hidden="false"> When did you quit?(drink) </label>
+        <div id="cid_178" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_178" name="q178_whenDid178" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_178" value="" /> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-1" data-type="control_dropdown" id="id_51"><label class="form-label form-label-top" id="label_51" for="input_51" aria-hidden="false"> Do you use any recreational substances? </label>
+        <div id="cid_51" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_51" name="q51_whatIs51" style="width:600px" data-component="dropdown" aria-label="Do you use any recreational substances?">
+            <option value="">Please Select</option>
+            <option value="yes">yes</option>
+            <option value="No">No</option>
+            <option value="Former">Former</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 always-hidden form-field-hidden" style="display:none;" data-type="control_checkbox" id="id_115"><label class="form-label form-label-top" id="label_115" aria-hidden="false"> Which substance(s)? </label>
+        <div id="cid_115" class="form-input-wide always-hidden" data-layout="full">
+          <div class="form-multiple-column" data-columncount="2" role="group" aria-labelledby="label_115" data-component="checkbox"><span class="form-checkbox-item"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_0" name="q115_whichSubstances[]" value="Cannabis (THC, marijuana, weed)" /><label id="label_input_115_0" for="input_115_0">Cannabis (THC, marijuana, weed)</label></span><span class="form-checkbox-item"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_1" name="q115_whichSubstances[]" value="Nicotine (tobacco, vapes)" /><label id="label_input_115_1" for="input_115_1">Nicotine (tobacco, vapes)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_2" name="q115_whichSubstances[]" value="Cocaine" /><label id="label_input_115_2" for="input_115_2">Cocaine</label></span><span class="form-checkbox-item"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_3" name="q115_whichSubstances[]" value="Methamphetamines" /><label id="label_input_115_3" for="input_115_3">Methamphetamines</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_4" name="q115_whichSubstances[]" value="MDMA (ecstasy/molly, E, X)" /><label id="label_input_115_4" for="input_115_4">MDMA (ecstasy/molly, E, X)</label></span><span class="form-checkbox-item"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_5" name="q115_whichSubstances[]" value="LSD (acid)" /><label id="label_input_115_5" for="input_115_5">LSD (acid)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_6" name="q115_whichSubstances[]" value="Psilocybin (magic mushrooms, shrooms)" /><label id="label_input_115_6" for="input_115_6">Psilocybin (magic mushrooms, shrooms)</label></span><span class="form-checkbox-item"><span class="dragger-item"></span><input aria-describedby="label_115" type="checkbox" class="form-checkbox" id="input_115_7" name="q115_whichSubstances[]" value="Opioids (heroin, prescription painkillers, oxy, dope)" /><label id="label_input_115_7" for="input_115_7">Opioids (heroin, prescription painkillers, oxy, dope)</label></span></div>
+        </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-3 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_56"><label class="form-label form-label-top" id="label_56" for="input_56" aria-hidden="false"> How often? </label>
+        <div id="cid_56" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_56" name="q56_howOften56" style="width:590px" data-component="dropdown" aria-label="How often?">
+            <option value="">Please Select</option>
+            <option value="daily">daily</option>
+            <option value="weekly">weekly</option>
+            <option value="monthly,">monthly,</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4" data-type="control_checkbox" id="id_118"><label class="form-label form-label-top" id="label_118" aria-hidden="false"> Do you have any of the following conditions? </label>
+        <div id="cid_118" class="form-input-wide" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_118" data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_118" type="checkbox" class="form-checkbox" id="input_118_0" name="q118_doYou[]" value="Diabetes" /><label id="label_input_118_0" for="input_118_0">Diabetes</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_118" type="checkbox" class="form-checkbox" id="input_118_1" name="q118_doYou[]" value="High blood pressure" /><label id="label_input_118_1" for="input_118_1">High blood pressure</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_118" type="checkbox" class="form-checkbox" id="input_118_2" name="q118_doYou[]" value="Heart disease" /><label id="label_input_118_2" for="input_118_2">Heart disease</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_118" type="checkbox" class="form-checkbox" id="input_118_3" name="q118_doYou[]" value="Asthma or COPD" /><label id="label_input_118_3" for="input_118_3">Asthma or COPD</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_118" type="checkbox" class="form-checkbox" id="input_118_4" name="q118_doYou[]" value="Sleep apnea" /><label id="label_input_118_4" for="input_118_4">Sleep apnea</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_118" type="checkbox" class="form-checkbox" id="input_118_5" name="q118_doYou[]" value="None of these" /><label id="label_input_118_5" for="input_118_5">None of these</label></span></div>
+        </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-5 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_57"><label class="form-label form-label-top" id="label_57" for="input_57" aria-hidden="false"> How do you manage your diabetes? </label>
+        <div id="cid_57" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_57" name="q57_howDo" style="width:600px" data-component="dropdown" aria-label="How do you manage your diabetes?">
+            <option value="">Please Select</option>
+            <option value=""></option>
+            <option value="■ Diet">■ Diet</option>
+            <option value="■ Oral">■ Oral</option>
+            <option value="■ medications">■ medications</option>
+            <option value="■ Insulin">■ Insulin</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-6 always-hidden" data-type="control_widget" id="id_122"><label class="form-label form-label-top" id="label_122" for="input_122" aria-hidden="false"> What was your last a1c? </label>
+        <div id="cid_122" class="form-input-wide always-hidden" data-layout="full">
+          <div data-widget-name="Numeric Slider" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="52934d8f3be147110a00002a" title="Numeric Slider" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_122" src="" style="max-width:1000px;border:none;width:100%;height:70px" data-width="1000" data-height="70"></iframe>
+            <div class="widget-inputs-wrapper"><input id="input_122" class="form-hidden form-widget  " type="hidden" name="q122_typeA122" value="" /><input id="widget_settings_122" class="form-hidden form-widget-settings" type="hidden" data-version="2" value="%5B%7B%22name%22%3A%22minvalue%22%2C%22value%22%3A%220%22%7D%2C%7B%22name%22%3A%22maxvalue%22%2C%22value%22%3A%22100%22%7D%2C%7B%22name%22%3A%22theme%22%2C%22value%22%3A%22Legacy%22%7D%5D" /></div>
+            <script type="text/javascript">
+              setTimeout(function()
+              {
+                function renderWidget()
+                {
+                  var _cFieldFrame = document.getElementById("customFieldFrame_122");
+                  if (_cFieldFrame)
+                  {
+                    _cFieldFrame.onload = function()
+                    {
+                      if (typeof widgetFrameLoaded !== 'undefined')
+                      {
+                        widgetFrameLoaded(122,
+                        {
+                          "formID": 250221251539044
+                        }, undefined)
+                      }
+                    };
+                    _cFieldFrame.src = "//widgets.jotform.io/pickers/slider.html?qid=122&isOpenedInPortal=undefined&isOpenedInAgent=undefined&align=Left&ref=" +
+                      encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                      '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                  }
+                }
+                if (false)
+                {
+                  var _interval = setInterval(function()
+                  {
+                    var dataMode = document.querySelector('html').getAttribute('data-mode');
+                    if (dataMode === 'fillMode')
+                    {
+                      renderWidget()
+                      clearInterval(_interval);
+                    }
+                  }, 1000);
+                }
+                else
+                {
+                  renderWidget();
+                }
+              }, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line fixed-width always-hidden" data-type="control_textbox" id="id_142"><label class="form-label form-label-top form-label-auto" id="label_142" for="input_142" aria-hidden="false"> Have you ever had a heart attack? </label>
+        <div id="cid_142" class="form-input-wide always-hidden" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_142" name="q142_haveYou142" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_142 sublabel_input_142" value="" /><label class="form-sub-label" for="input_142" id="sublabel_input_142" style="min-height:13px">eg . 1 weeks, 1 year,</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 always-hidden form-field-hidden" style="display:none;" data-type="control_radio" id="id_125"><label class="form-label form-label-top" id="label_125" aria-hidden="false"> How was it treated? </label>
+        <div id="cid_125" class="form-input-wide always-hidden" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_125" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_125" type="radio" class="form-radio" id="input_125_0" name="q125_howWas" value="medication" /><label id="label_input_125_0" for="input_125_0">medication</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_125" type="radio" class="form-radio" id="input_125_1" name="q125_howWas" value="stents" /><label id="label_input_125_1" for="input_125_1">stents</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_125" type="radio" class="form-radio" id="input_125_2" name="q125_howWas" value="surgery" /><label id="label_input_125_2" for="input_125_2">surgery</label></span></div>
+        </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-2" data-type="control_dropdown" id="id_59"><label class="form-label form-label-top" id="label_59" for="input_59" aria-hidden="false"> How often do you use your rescue inhaler? </label>
+        <div id="cid_59" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_59" name="q59_howOften59" style="width:600px" data-component="dropdown" aria-label="How often do you use your rescue inhaler?">
+            <option value="">Please Select</option>
+            <option value="3+ times a day">3+ times a day</option>
+            <option value="less than 1 time a month">less than 1 time a month</option>
+            <option value="I don’t have one">I don’t have one</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-3" data-type="control_dropdown" id="id_60"><label class="form-label form-label-top" id="label_60" for="input_60" aria-hidden="false"> Have you been admitted for COPD or asthma in the last year? </label>
+        <div id="cid_60" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_60" name="q60_areYou60" style="width:800px" data-component="dropdown" aria-label="Have you been admitted for COPD or asthma in the last year?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-4" data-type="control_dropdown" id="id_126"><label class="form-label form-label-top" id="label_126" for="input_126" aria-hidden="false"> Do you use a CPAP machine? </label>
+        <div id="cid_126" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_126" name="q126_doYou126" style="width:600px" data-component="dropdown" aria-label="Do you use a CPAP machine?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-5" data-type="control_dropdown" id="id_127"><label class="form-label form-label-top" id="label_127" for="input_127" aria-hidden="false"> Are you allergic to any medications or substances? </label>
+        <div id="cid_127" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_127" name="q127_areYou" style="width:670px" data-component="dropdown" aria-label="Are you allergic to any medications or substances?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-6 form-field-hidden" style="display:none;" data-type="control_textbox" id="id_128"><label class="form-label form-label-top" id="label_128" for="input_128" aria-hidden="false"> Please list your allergies. </label>
+        <div id="cid_128" class="form-input-wide" data-layout="half"> <input type="text" id="input_128" name="q128_pleaseList" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:670px" size="670" data-component="textbox" aria-labelledby="label_128" value="" /> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-7" data-type="control_dropdown" id="id_129"><label class="form-label form-label-top" id="label_129" for="input_129" aria-hidden="false"> Have you had surgery before? </label>
+        <div id="cid_129" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_129" name="q129_haveYou129" style="width:670px" data-component="dropdown" aria-label="Have you had surgery before? ">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-8 form-field-hidden" style="display:none;" data-type="control_textbox" id="id_130"><label class="form-label form-label-top" id="label_130" for="input_130" aria-hidden="false"> Did you experience any complications during or after surgery? </label>
+        <div id="cid_130" class="form-input-wide" data-layout="half"> <input type="text" id="input_130" name="q130_didYou" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_130" value="" /> </div>
+      </li>
+      <li id="cid_61" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_61" class="form-header" data-component="header">Medications</h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-9" data-type="control_dropdown" id="id_62"><label class="form-label form-label-top" id="label_62" for="input_62" aria-hidden="false"> Are you currently taking any medications? </label>
+        <div id="cid_62" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_62" name="q62_areYou62" style="width:700px" data-component="dropdown" aria-label="Are you currently taking any medications?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line fixed-width form-line-column form-col-10 form-field-hidden" style="display:none;" data-type="control_textbox" id="id_131"><label class="form-label form-label-top" id="label_131" for="input_131" aria-hidden="false"> Please list your medications, including over-the-counter drugs and supplements. </label>
+        <div id="cid_131" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_131" name="q131_pleaseList131" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:670px" size="670" data-component="textbox" aria-labelledby="label_131 sublabel_input_131" value="" /><label class="form-sub-label" for="input_131" id="sublabel_input_131" style="min-height:13px">Text Field</label></span> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_63"><label class="form-label form-label-top" id="label_63" for="input_63" aria-hidden="false"> Are you taking blood thinners such as Warfarin, Aspirin, or newer medications like Eliquis,Xarelto, or Pradaxa? </label>
+        <div id="cid_63" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_63" name="q63_areYou63" style="width:800px" data-component="dropdown" aria-label="Are you taking blood thinners such as Warfarin, Aspirin, or newer medications like Eliquis,Xarelto, or Pradaxa? ">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 form-field-hidden" style="display:none;" data-type="control_checkbox" id="id_132"><label class="form-label form-label-top" id="label_132" aria-hidden="false"> Which ones? </label>
+        <div id="cid_132" class="form-input-wide" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_132" data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_0" name="q132_whichOnes[]" value="warfarin (Coumadin)" /><label id="label_input_132_0" for="input_132_0">warfarin (Coumadin)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_1" name="q132_whichOnes[]" value="aspirin, clopidogrel (Plavix)" /><label id="label_input_132_1" for="input_132_1">aspirin, clopidogrel (Plavix)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_2" name="q132_whichOnes[]" value="ticagrelor(Brilinta), prasugrel (Effient" /><label id="label_input_132_2" for="input_132_2">ticagrelor(Brilinta), prasugrel (Effient</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_3" name="q132_whichOnes[]" value="apixaban (Eliquis)" /><label id="label_input_132_3" for="input_132_3">apixaban (Eliquis)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_4" name="q132_whichOnes[]" value="dabigatran (Pradaxa)" /><label id="label_input_132_4" for="input_132_4">dabigatran (Pradaxa)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_5" name="q132_whichOnes[]" value="rivaroxaban(Xarelto)" /><label id="label_input_132_5" for="input_132_5">rivaroxaban(Xarelto)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_6" name="q132_whichOnes[]" value="edoxaban (Savaysa)" /><label id="label_input_132_6" for="input_132_6">edoxaban (Savaysa)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_7" name="q132_whichOnes[]" value="betrixaban (Bevyxxa)" /><label id="label_input_132_7" for="input_132_7">betrixaban (Bevyxxa)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_8" name="q132_whichOnes[]" value="enoxaparin (Lovenox)" /><label id="label_input_132_8" for="input_132_8">enoxaparin (Lovenox)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_9" name="q132_whichOnes[]" value="fondaparinux (Arixtra)" /><label id="label_input_132_9" for="input_132_9">fondaparinux (Arixtra)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_10" name="q132_whichOnes[]" value="cilostazol (Pletal)" /><label id="label_input_132_10" for="input_132_10">cilostazol (Pletal)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_11" name="q132_whichOnes[]" value="dipyridamole (Persantine)" /><label id="label_input_132_11" for="input_132_11">dipyridamole (Persantine)</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_132" type="checkbox" class="form-checkbox" id="input_132_12" name="q132_whichOnes[]" value="aspirin/dipyridamole(Aggrenox)" /><label id="label_input_132_12" for="input_132_12">aspirin/dipyridamole(Aggrenox)</label></span></div>
+        </div>
+      </li>
+      <li id="cid_64" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_64" class="form-header" data-component="header">Functional Status</h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2" data-type="control_radio" id="id_133"><label class="form-label form-label-top" id="label_133" aria-hidden="false"> How much physical activity can you comfortably perform? </label>
+        <div id="cid_133" class="form-input-wide" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_133" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_133" type="radio" class="form-radio" id="input_133_0" name="q133_howMuch133" value="Light (e.g., walking on level ground)" /><label id="label_input_133_0" for="input_133_0">Light (e.g., walking on level ground)</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_133" type="radio" class="form-radio" id="input_133_1" name="q133_howMuch133" value="Moderate (e.g., climbing stairs without stopping)" /><label id="label_input_133_1" for="input_133_1">Moderate (e.g., climbing stairs without stopping)</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_133" type="radio" class="form-radio" id="input_133_2" name="q133_howMuch133" value="Vigorous (e.g., jogging or swimming)" /><label id="label_input_133_2" for="input_133_2">Vigorous (e.g., jogging or swimming)</label></span></div>
+        </div>
+      </li>
+      <li class="form-line fixed-width form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_65"><label class="form-label form-label-top" id="label_65" for="input_65" aria-hidden="false"> Do you use mobility aids </label>
+        <div id="cid_65" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_65" name="q65_doYou65" style="width:670px" data-component="dropdown" aria-label="Do you use mobility aids">
+            <option value="">Please Select</option>
+            <option value="○ Cane">○ Cane</option>
+            <option value="○ Walker">○ Walker</option>
+            <option value="○ Wheelchair">○ Wheelchair</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_dropdown" id="id_66"><label class="form-label form-label-top" id="label_66" for="input_66" aria-hidden="false"> Do you require assistance with daily activities like bathing, dressing, or cooking? </label>
+        <div id="cid_66" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_66" name="q66_doYou66" style="width:310px" data-component="dropdown" aria-label="Do you require assistance with daily activities like bathing, dressing, or cooking? ">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li id="cid_67" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_67" class="form-header" data-component="header">Surgical and Anesthesia Consideration</h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2" data-type="control_dropdown" id="id_68"><label class="form-label form-label-top" id="label_68" for="input_68" aria-hidden="false"> Do you understand the details of your upcoming surgery? </label>
+        <div id="cid_68" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_68" name="q68_doYou68" style="width:310px" data-component="dropdown" aria-label="Do you understand the details of your upcoming surgery?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_150"><label class="form-label form-label-top form-label-auto" id="label_150" for="input_150" aria-hidden="false"> Have you ever had complications with anesthesia? </label>
+        <div id="cid_150" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_150" name="q150_haveYou" style="width:310px" data-component="dropdown" aria-label="Have you ever had complications with anesthesia?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_checkbox" id="id_151"><label class="form-label form-label-top form-label-auto" id="label_151" aria-hidden="false"> Choices </label>
+        <div id="cid_151" class="form-input-wide" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_151" data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_151" type="checkbox" class="form-checkbox" id="input_151_0" name="q151_choices[]" value="aspiration" /><label id="label_input_151_0" for="input_151_0">aspiration</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_151" type="checkbox" class="form-checkbox" id="input_151_1" name="q151_choices[]" value="bronchospasm" /><label id="label_input_151_1" for="input_151_1">bronchospasm</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_151" type="checkbox" class="form-checkbox" id="input_151_2" name="q151_choices[]" value="difficult airway" /><label id="label_input_151_2" for="input_151_2">difficult airway</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_151" type="checkbox" class="form-checkbox" id="input_151_3" name="q151_choices[]" value="nausea" /><label id="label_input_151_3" for="input_151_3">nausea</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_151" type="checkbox" class="form-checkbox" id="input_151_4" name="q151_choices[]" value="pain control" /><label id="label_input_151_4" for="input_151_4">pain control</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_151" type="checkbox" class="form-checkbox" id="input_151_5" name="q151_choices[]" value="awareness" /><label id="label_input_151_5" for="input_151_5">awareness</label></span><span class="form-checkbox-item formCheckboxOther" style="clear:left"><input type="checkbox" class="form-checkbox-other form-checkbox" name="q151_choices[other]" id="other_151" tabindex="0" aria-label="Other" value="other" /><label id="label_other_151" style="text-indent:0" for="other_151">Other</label><span id="other_151_input" class="other-input-container" style="display:none"><input type="text" class="form-checkbox-other-input form-textbox" name="q151_choices[other]" data-otherhint="Other" size="15" id="input_151" data-placeholder="Please type another option here" placeholder="Please type another option here" /></span></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_dropdown" id="id_70"><label class="form-label form-label-top" id="label_70" for="input_70" aria-hidden="false"> Do you have any hardware in your back (e.g., rods, screws) or a history of infections near the surgical site? </label>
+        <div id="cid_70" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_70" name="q70_doYou70" style="width:310px" data-component="dropdown" aria-label="Do you have any hardware in your back (e.g., rods, screws) or a history of infections near the surgical site? ">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li id="cid_71" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_71" class="form-header" data-component="header">Social and Psychological Factors</h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2" data-type="control_dropdown" id="id_72"><label class="form-label form-label-top" id="label_72" for="input_72" aria-hidden="false"> Do you have someone to help you at home after surgery? </label>
+        <div id="cid_72" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_72" name="q72_doYou72" style="width:310px" data-component="dropdown" aria-label="Do you have someone to help you at home after surgery? ">
+            <option value="">Please Select</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select> </div>
+      </li>
+      <li class="form-line fixed-width" data-type="control_dropdown" id="id_73"><label class="form-label form-label-top" id="label_73" for="input_73" aria-hidden="false"> Do you feel stressed or anxious about your surgery? </label>
+        <div id="cid_73" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_73" name="q73_doYou73" style="width:700px" data-component="dropdown" aria-label="Do you feel stressed or anxious about your surgery?">
+            <option value="">Please Select</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_11">
+        <div id="cid_11" class="form-input-wide" data-layout="full">
+          <div class="divider" data-component="divider" style="border-bottom-width:5px;border-bottom-style:solid;border-color:#e6e6e6;height:5px;margin-left:70px;margin-right:70px;margin-top:5px;margin-bottom:5px"></div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_widget" id="id_33">
+        <div id="cid_33" class="form-input-wide termsAndConditionsV2 jf-required" data-layout="full">
+          <div data-widget-name="Terms &amp; Conditions" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="52948fb29322cd302b00000c" title="Terms &amp; Conditions" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_33" src="" style="max-width:620px;border:none;width:100%;height:50px" data-width="620" data-height="50"></iframe>
+            <div class="widget-inputs-wrapper"><input id="input_33" class="form-hidden form-widget widget-required " type="hidden" name="q33_typeA" value="" /><input id="widget_settings_33" class="form-hidden form-widget-settings" type="hidden" data-version="2" value="%5B%7B%22name%22%3A%22termsText%22%2C%22value%22%3A%22I%20agree%20to%20%7Bterms%20%26%20conditions%7D.%22%7D%2C%7B%22name%22%3A%22termsLink%22%2C%22value%22%3A%22www.example.com%22%7D%2C%7B%22name%22%3A%22theme%22%2C%22value%22%3A%22default%22%7D%2C%7B%22name%22%3A%22acceptedText%22%2C%22value%22%3A%22Accepted%22%7D%5D" /></div>
+            <script type="text/javascript">
+              setTimeout(function()
+              {
+                function renderWidget()
+                {
+                  var _cFieldFrame = document.getElementById("customFieldFrame_33");
+                  if (_cFieldFrame)
+                  {
+                    _cFieldFrame.onload = function()
+                    {
+                      if (typeof widgetFrameLoaded !== 'undefined')
+                      {
+                        widgetFrameLoaded(33,
+                        {
+                          "formID": 250221251539044
+                        }, undefined)
+                      }
+                    };
+                    _cFieldFrame.src = "//widgets.jotform.io/termsConditions/?qid=33&isOpenedInPortal=undefined&isOpenedInAgent=undefined&align=Left&ref=" +
+                      encodeURIComponent(window.location.protocol + "//" + window.location.host) + '&ndt=1' + '' + '' +
+                      '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                  }
+                }
+                if (false)
+                {
+                  var _interval = setInterval(function()
+                  {
+                    var dataMode = document.querySelector('html').getAttribute('data-mode');
+                    if (dataMode === 'fillMode')
+                    {
+                      renderWidget()
+                      clearInterval(_interval);
+                    }
+                  }, 1000);
+                }
+                else
+                {
+                  renderWidget();
+                }
+              }, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_144">
+        <div id="cid_144" class="form-input-wide" data-layout="full">
+          <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField"><button id="input_144" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_number" id="id_149"><label class="form-label form-label-top form-label-auto" id="label_149" for="input_149" aria-hidden="false"> BMI </label>
+        <div id="cid_149" class="form-input-wide" data-layout="half"> <input type="number" id="input_149" name="q149_bmi" data-type="input-number" class=" form-number-input form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="e.g., 23" data-component="number" aria-labelledby="label_149" step="any" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_40">
+        <div id="cid_40" class="form-input-wide" data-layout="full">
+          <div class="divider" data-component="divider" style="border-bottom-width:5px;border-bottom-style:solid;border-color:#e6e6e6;height:5px;margin-left:70px;margin-right:70px;margin-top:5px;margin-bottom:5px"></div>
+        </div>
+      </li>
+      <li style="clear:both"></li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+    </ul>
+  </div>
+
+  <script src="https://cdn01.jotfor.ms/s/umd/2fba2b3d45d/for-accessibility-enhancer.js" type="text/javascript"></script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="250221251539044" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='250221251539044'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "250221251539044-250221251539044";
+    }
+  </script>
+</form>
+<script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
+</body>
+</html>
